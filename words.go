@@ -110,28 +110,3 @@ func CountVowels(s string) (count int) {
 	}
 	return
 }
-
-// Return true if word is isogram (has no repeating letters)
-func IsIsogram(s string) bool {
-	return true
-}
-
-// Transforms normal text to morse code
-func TextToMorseCode(s string) (result string) {
-	return
-}
-
-// Transforms morse code to normal text
-func MorseCodeToText(s string) (result string) {
-	return
-}
-
-// Return true if given string s contains only numbers
-func IsNumeric(s string) bool {
-	return true
-}
-
-// Return true if given string contains only numbers and/or alphabet letters
-func IsAlphaNumeric(s string) bool {
-	return true
-}
