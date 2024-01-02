@@ -56,3 +56,7 @@ func main() {
     fmt.Println(message)
 }
 ```
+This should output following:
+```
+321
+```
