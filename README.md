@@ -1,6 +1,9 @@
 # words
 Simple helper package for strings and words.
 
+# English word set
+I found this awesome github repo [https://github.com/dwyl/english-words](https://github.com/dwyl/english-words) from which i downloaded words.txt containing huge amount of english words.
+
 ## Features
 - get text length
 - reverse text
