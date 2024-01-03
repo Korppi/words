@@ -15,7 +15,7 @@ Simple helper package for strings and words.
 - check for lipogram (text cannot contain selected letters)
 
 ## Usage
-This package have not been released (yet?) at [https://pkg.go.dev/](https://pkg.go.dev/) but might be released at some point.
+This package have not been released as go package so follow instructions below on how to use this.
 
 To use this package, download or clone this repo next to golang project where you are going to use this. For example, if you have folder named "go-projects" and in there you have golang project "project-a" and you want to add this package to it you should have this package next to "project-a" like following:
 
