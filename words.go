@@ -1,6 +1,11 @@
 package words
 
-import "strings"
+import (
+	"bufio"
+	"log"
+	"os"
+	"strings"
+)
 
 // Reverse given string s
 func Reverse(s string) (reversed string) {
@@ -106,6 +111,30 @@ func CountVowels(s string) (count int) {
 	for _, r := range s {
 		if IsVowel(r) {
 			count++
+		}
+	}
+	return
+}
+
+func SearchPossibleWords(letters string) (result []string) {
+	file, err := os.Open("words_alpha.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+	scanner := bufio.NewScanner(file)
+	letterLen := len(letters)
+	letters = strings.ToLower(letters)
+	for scanner.Scan() {
+		text := strings.ToLower(scanner.Text())
+		originalText := text
+		if len(text) <= letterLen {
+			for _, letter := range letters {
+				text = strings.Replace(text, string(letter), "", 1)
+			}
+			if text == "" {
+				result = append(result, originalText)
+			}
 		}
 	}
 	return

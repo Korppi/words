@@ -224,3 +224,19 @@ func TestCountVowels(t *testing.T) {
 		}
 	}
 }
+
+func TestSearchPossibleWords(t *testing.T) {
+	testCases := []struct {
+		letters       string
+		expectedCount int
+	}{
+		{"aa", 2},
+		{"a", 1},
+	}
+	for _, test := range testCases {
+		result := SearchPossibleWords(test.letters)
+		if len(result) != test.expectedCount {
+			t.Errorf("Got '%v' but expected '%v' for '%s'", result, test.expectedCount, test.letters)
+		}
+	}
+}
