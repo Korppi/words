@@ -2,10 +2,13 @@ package words
 
 import (
 	"bufio"
+	"embed"
 	"log"
-	"os"
 	"strings"
 )
+
+//go:embed words_alpha.txt
+var content embed.FS
 
 // Reverse given string s
 func Reverse(s string) (reversed string) {
@@ -117,7 +120,8 @@ func CountVowels(s string) (count int) {
 }
 
 func SearchPossibleWords(letters string) (result []string) {
-	file, err := os.Open("words_alpha.txt")
+
+	file, err := content.Open("words_alpha.txt") //os.Open("words_alpha.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
