@@ -11,11 +11,7 @@ I found this awesome github repo [https://github.com/dwyl/english-words](https:/
 - check for anagram (two different words contain same letters in different order, example: "I am Lord Voldemort" is an anagram of "Tom Marvolo Riddle")
 - check for pangram (text contains all 26 letters atleast once)
 - check and count vowels or consonants
-
-### Planned features
 - find all words that can be written with given letters (for example: with letters "tra" you can write (atleast) words "rat" and "tar"
-- check for isogram (word does not contain same letter more than once, example: "dermatoglyphics")
-- check for lipogram (text cannot contain selected letters)
 
 ## Usage
 This package have not been released as go package so follow instructions below on how to use this.
@@ -63,3 +59,4 @@ This should output following:
 ```
 321
 ```
+For example i have used this package here: [https://github.com/Korppi/words-cli](https://github.com/Korppi/words-cli)
