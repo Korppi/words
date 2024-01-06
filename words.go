@@ -68,7 +68,7 @@ func WordLength(s string) (count int) {
 
 // Return how many times substring occurs in s
 func CountOccurences(s string, substring string) int {
-	return 0
+	return strings.Count(s, substring)
 }
 
 // Returns true if world contains every letter in alphabets atleast once
